@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Route,Routes,BrowserRouter } from 'react-router-dom'  
 
+const routing = (  
+  <BrowserRouter>  
+  <Routes>
+      <Route path="/home" element={<App />} />    
+      <Route path={"/" | "/abc"} element={<App />} />  
+    </Routes>
+  </BrowserRouter>  
+)  
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  routing,
   document.getElementById('root')
 );
 
