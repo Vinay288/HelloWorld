@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css"
 import React from 'react';
 import logo from "../src/assests/image/bridgelabz.png"
 
@@ -29,9 +29,8 @@ class App extends React.Component {
   }
   render() {
     return (
-
-
-      <body>
+<>
+      <div>
         <h1>Hello {this.state.userName}</h1>
         <img src={logo} onClick={this.onClick} alt="loaded" />
         <br/>
@@ -54,7 +53,8 @@ class App extends React.Component {
           To know about us,visit <a href="https://www.bridgelabz.com/">Bridgelabz</a> to learn even more about our mission
           i.e <strong> Employability to all</strong>
         </p>
-      </body>
+      </div>
+      </>
     );
   }
 }
