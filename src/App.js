@@ -7,7 +7,7 @@ class App extends React.Component{
   constructor(){
     super()
     this.state={
-      title:"hello world"
+      userName:"Vinay"
     }
   }
   onClick=($event) =>{
@@ -18,7 +18,7 @@ class App extends React.Component{
   render(){
     return(
       <div>
-      <h1>{this.state.title}</h1>
+      <h1>Hello {this.state.userName}</h1>
         <img src={logo} onClick={this.onClick} alt="loaded"/>
         </div>
     );
